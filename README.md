@@ -1,23 +1,23 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
-## 📌 Overview
+## Overview
 This project predicts whether a person has heart disease based on medical attributes using Machine Learning.  
 It was developed as part of the **YBI Foundation Internship Program**.
 
-## 🧠 Objective
+## Objective
 To train a classification model that can identify heart disease risk using patient health data.
 
-## 📊 Dataset
+## Dataset
 Dataset used: [Heart Disease UCI Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
 
-## ⚙️ Technologies Used
+## Technologies Used
 - Python
 - Pandas, NumPy
 - Scikit-learn
 - Flask (Web Deployment)
 - HTML/CSS
 
-## 🚀 How to Run
+## How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/heart-disease-prediction.git
@@ -41,13 +41,13 @@ Dataset used: [Heart Disease UCI Dataset](https://www.kaggle.com/datasets/johnsm
 
 5. Open browser and visit: `http://127.0.0.1:5000/`
 
-## 📈 Model Performance
+## Model Performance
 | Metric | Score |
 |--------|-------|
 | Accuracy | ~88% |
 | Precision | 0.87 |
 | Recall | 0.86 |
 
-## 👨‍💻 Author
+## creatted by:
 **Rahul Yadav**  
 YBI Foundation Internship Project
