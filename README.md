@@ -48,6 +48,6 @@ Dataset used: [Heart Disease UCI Dataset](https://www.kaggle.com/datasets/johnsm
 | Precision | 0.87 |
 | Recall | 0.86 |
 
-## creatted by:
+## Created by:
 **Rahul Yadav**  
 YBI Foundation Internship Project
