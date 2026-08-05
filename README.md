@@ -59,6 +59,9 @@ Open:
 ```
 http://127.0.0.1:5000
 ```
+## 🌐 Live Demo
+
+https://heart-disease-prediction1-wkn8.onrender.com
 
 ## 📸 Screenshots
 
