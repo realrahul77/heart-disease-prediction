@@ -1,0 +1,291 @@
+/* ---------- Global ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------- Container ---------- */
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    background:#1E3A8A;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+header p{
+    font-size:17px;
+}
+
+/* ---------- Card ---------- */
+
+.card{
+
+    background:white;
+
+    margin-top:35px;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+/* ---------- Form ---------- */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+.form-group label{
+
+    margin-bottom:6px;
+
+    font-weight:bold;
+
+}
+
+.form-group input,
+.form-group select{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+}
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:#1E3A8A;
+
+    outline:none;
+
+}
+
+/* ---------- Button ---------- */
+
+.btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    background:#1E3A8A;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#163070;
+
+}
+
+/* ---------- Result ---------- */
+
+.result-card{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.success{
+
+    background:#28a745;
+
+}
+
+.danger{
+
+    background:#dc3545;
+
+}
+
+.warning{
+
+    background:#f39c12;
+
+}
+
+.result-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.result-card h3{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+/* ---------- About ---------- */
+
+.info-card{
+
+    background:white;
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.info-card h2{
+
+    margin-bottom:15px;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    background:#1E3A8A;
+
+    color:white;
+
+    text-align:center;
+
+    margin-top:40px;
+
+    padding:20px;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:1000px){
+
+header h1{
+
+font-size:26px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+}
+/* Button Group */
+
+.button-group{
+
+display:flex;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.button-group .btn{
+
+flex:1;
+
+}
+
+.secondary-btn{
+
+background:#6c757d;
+
+}
+
+.secondary-btn:hover{
+
+background:#555;
+
+}
+
+/* Placeholder */
+
+input::placeholder{
+
+color:#888;
+
+font-size:14px;
+
+}
+
+/* Better About Card */
+
+.info-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+}

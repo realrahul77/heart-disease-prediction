@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Disease Risk Prediction System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <h1>❤️ Heart Disease Risk Prediction System</h1>
+
+            <p>
+                Predict the risk of heart disease using a Random Forest Machine Learning model trained on clinical parameters.
+            </p>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="card">
+
+                <h2>Patient Information</h2>
+
+                <form action="/predict" method="POST">
+
+                    <div class="form-group">
+
+                        <label>Age</label>
+
+                        <input
+                          type="number"
+                          name="age"
+                          placeholder="Enter age (20-90)"
+                          min="20"
+                          max="100"
+                        required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Gender</label>
+
+                        <select name="gender" required>
+
+                            <option value="">Select</option>
+
+                            <option value="1">Male</option>
+
+                            <option value="0">Female</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Chest Pain Type</label>
+
+                        <select name="cp" required>
+
+                            <option value="">Select</option>
+
+                            <option value="0">Typical Angina</option>
+
+                            <option value="1">Atypical Angina</option>
+
+                            <option value="2">Non-anginal Pain</option>
+
+                            <option value="3">Asymptomatic</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Resting Blood Pressure</label>
+
+                        <input
+                         type="number"
+                         name="trestbps"
+                         placeholder="e.g. 120 mmHg"
+                         min="80"
+                         max="250"
+                        required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Cholesterol</label>
+
+                        <input
+                         type="number"
+                         name="chol"
+                         placeholder="e.g. 220 mg/dL"
+                         min="100"
+                         max="700"
+                         required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Fasting Blood Sugar</label>
+                        
+
+                        <select name="fbs" required>
+
+                            <option value="">Select</option>
+
+                            <option value="1">
+                                Greater than 120 mg/dl
+                            </option>
+
+                            <option value="0">
+                                Less than or equal to 120 mg/dl
+                            </option>
+
+                        </select>
+
+                    </div>
+                    <!-- Hidden Default Values -->
+
+
+<div class="button-group">
+
+    <button type="submit" class="btn">
+        Predict Heart Disease Risk
+    </button>
+
+    <button type="reset" class="btn secondary-btn">
+        Reset
+    </button>
+
+</div>
+
+</form>
+
+</div>
+
+{% if result %}
+
+<div class="result-card {{ result.color }}">
+
+    <h2>Prediction Result</h2>
+
+    <h3>{{ result.status }}</h3>
+
+    <p>{{ result.message }}</p>
+
+</div>
+
+{% endif %}
+
+<div class="info-card">
+
+    <h2>About Project</h2>
+
+    <p>
+        This web application predicts the likelihood of heart disease using a
+        Random Forest Machine Learning model trained on the UCI Heart Disease Dataset. It has been developed as an educational
+        project to demonstrate the use of Machine Learning in healthcare.
+    </p>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+
+          Developed by Rahul Yadav
+
+        </p>
+
+        <p>
+
+          Flask • Python • Random Forest • UCI Heart Disease Dataset
+
+         </p>
+
+    </div>
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
